@@ -7,10 +7,9 @@ import {loadStripe} from '@stripe/stripe-js';
 
 import Review from './Review';
 
-// const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_PUBLIC_KEY);
-const stripePromise = loadStripe('...');
+const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_PUBLIC_KEY);
 
-const PaymentForm = ({shippingData, checkoutToken, backStep, onCaptureCheckout, nextStep}) => {
+const PaymentForm = ({shippingData, checkoutToken, backStep, onCaptureCheckout, nextStep, timeout}) => {
 	const handleSubmit = async (event, elements, stripe) => {
 		event.preventDefault();
 		if (!stripe || !elements) return;
@@ -34,7 +33,7 @@ const PaymentForm = ({shippingData, checkoutToken, backStep, onCaptureCheckout, 
 					postal_zip_code: shippingData.zip,
 					country: shippingData.shippingCountry
 				},
-				fulfillment: {shipping_method: shippingData.shippinOption},
+				fulfillment: {shipping_method: shippingData.shippingOption},
 				payment: {
 					gateway: 'stripe',
 					stripe: {
@@ -43,6 +42,7 @@ const PaymentForm = ({shippingData, checkoutToken, backStep, onCaptureCheckout, 
 				}
 			};
 			onCaptureCheckout(checkoutToken.id, orderData);
+			timeout();
 			nextStep();
 		}
 	};

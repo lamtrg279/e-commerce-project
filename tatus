@@ -1,0 +1,35 @@
+[33mcommit 71352c353d3e3e04b2bb03d513702098f9796ee5[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Lam <nl2791999@gmail.com>
+Date:   Fri Mar 25 17:15:28 2022 -0500
+
+    review and payment frontend
+
+[33mcommit df29e5a0a70b3b3840dfabb665e7e23fe1be7185[m
+Author: Lam <nl2791999@gmail.com>
+Date:   Fri Mar 25 12:24:23 2022 -0500
+
+    fetch subdivions and forms
+
+[33mcommit 9790be4de409c7e6db432900c2c6314c54db7a23[m
+Author: Lam <nl2791999@gmail.com>
+Date:   Fri Jan 14 15:38:08 2022 -0600
+
+    adding button & routes
+
+[33mcommit 3c90742debf28ea12dfff3d54a18d457080496e3[m
+Author: Lam <nl2791999@gmail.com>
+Date:   Wed Jan 12 20:42:19 2022 -0600
+
+    adding navbar and chec/commerce
+
+[33mcommit efbbdcb8a90d723d79ef76b12b92d0a346eff85e[m
+Author: Lam <nl2791999@gmail.com>
+Date:   Mon Jan 10 18:37:54 2022 -0600
+
+    initial commit
+
+[33mcommit 4a922a01857e05d324b17d8a56b73d087862b1ad[m
+Author: Lam <nl2791999@gmail.com>
+Date:   Fri Jan 7 18:00:37 2022 -0600
+
+    Initialize project using Create React App
