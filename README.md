@@ -1,5 +1,5 @@
 # E-commerce Application
-In this project, I built a web application using Javascript, Javascript, Commerce.js that performs real-life functionality of a online commerce website.
+In this project, I built a web application using Javascript, React.js, Commerce.js that performs real-life functionality of a mock online commerce website.
 
 ## Application demo
 https://commercejsportfolio.netlify.app/
